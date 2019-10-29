@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 1;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -46,7 +46,7 @@
     height: 100vh;
     overflow: hidden; }
   .menu-potrait {
-    background: #8abfd1;
+    background: #b4e1fa;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-potrait.show {
@@ -54,11 +54,11 @@
     .menu-potrait .image {
       width: 250px;
       height: 250px;
-      background: url(../img/lissette2.png);
+      background: url(../img/lissette.png);
       border-radius: 50%;
-      border: solid 3px blue; }
+      border: solid 3px #084E8A; }
   .menu-branding {
-    background: #99cfe0;
+    background: #202126;
     transform: translate3d(0, -100%, 0);
     width: 50%;
     transition: all 0.5s ease-out; }
@@ -76,12 +76,12 @@
     position: relative;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 500;
-    color: set-text-color(lightblue);
+    font-weight: 600;
+    color: set-text-color(#b4e1fa);
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: brown; }
+      color: #b4e1fa; }
 
 li.nav-item {
   display: inline-block;
@@ -106,8 +106,8 @@ li.nav-item {
   box-sizing: border-box; }
 
 body {
-  background-color: lightblue;
-  color: white;
+  background-color: black;
+  color: #ebf5fa;
   height: 100%;
   margin: 0;
   font-family: "Roboto Slab", serif;
@@ -123,7 +123,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(173, 216, 230, 0.9);
+      background: rgba(0, 0, 0, 0.9);
       z-index: -1; }
 
 h1,
@@ -139,11 +139,11 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(183, 221, 233, 0.5); }
+    margin-left: 2.1px;
+    background: rgba(6, 6, 6, 0.5); }
 
 a {
-  color: white;
+  color: #ebf5fa;
   text-decoration: none; }
 
 header {
@@ -152,7 +152,7 @@ header {
   width: 1005; }
 
 .secondary-text {
-  color: limegreen; }
+  color: #b4e1fa; }
 
 main {
   padding: 4rem;
@@ -162,7 +162,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: limegreen;
+        color: #b4e1fa;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -178,7 +178,7 @@ main {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: brown 3px solid; }
+  border: #b4e1fa 3px solid; }
 
 .bio {
   grid-area: bio;
@@ -194,10 +194,10 @@ main {
   grid-area: exp3; }
 
 .exp {
-  background: #c1e1ec;
+  background: #b4e1fa;
   padding: 0.5rem;
   margin: 30px;
-  border-bottom: brown 5px solid; }
+  border-bottom: #ebf5fa 5px solid; }
 
 .work {
   display: grid;
@@ -205,10 +205,10 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
   .work img {
     width: 100%;
-    border: 3px white solid; }
+    border: 3px #ebf5fa solid; }
     .work img:hover {
       opacity: 0.5;
-      border-color: limegreen;
+      border-color: #b4e1fa;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -219,15 +219,15 @@ main {
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
-    border: 3px white solid;
+    border: 3px #ebf5fa solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: limegreen; }
+      background: #b4e1fa; }
       .boxes div:hover span {
-        color: white; }
+        color: #ebf5fa; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -235,21 +235,75 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: limegreen; }
+    background: #b4e1fa; }
 
 .btn-dark {
-  background: #235e71;
-  color: white; }
+  background: #001429;
+  color: #ebf5fa; }
 
 .btn-light {
-  background: white;
-  color: black; }
+  background: #084e8a;
+  color: #ebf5fa; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #86c5da;
+  background: #b4e1fa;
   height: 60px; }
+
+#main-footer h3 {
+  color: #084e8a; }
+
+.lineup {
+  position: relative;
+  display: inline;
+  line-height: 14px; }
+
+.fa-eye {
+  margin-right: 10px; }
+
+.btn-txt {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin-left: 1px; }
+
+.btn-margin {
+  margin-left: 10px; }
+
+.work-img {
+  height: 200px;
+  width: 200px;
+  color: #ebf5fa; }
+
+.img-text {
+  position: static;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+img {
+  z-index: 99;
+  opacity: 1; }
+
+.videos {
+  margin-right: 50px; }
+
+iframe {
+  width: 100%;
+  height: auto; }
+
+.mixing {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
+
+.exp p,
+h3 {
+  color: #001429; }
+
+.text-secondary {
+  color: #ebf5fa; }
 
 @media screen and (max-width: 768px) {
   main {
@@ -274,9 +328,9 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-potrait .image {
-      background: url("../img/smallLissette.png");
-      width: 150px;
-      height: 150px; }
+      background: url("../img/lissette.png");
+      width: 262px;
+      height: 265px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "exp1" "exp2" "exp3";
     grid-template-areas: 1fr; } }
